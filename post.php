@@ -1,13 +1,13 @@
 <?php
 // Connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'userlogin');
+$db = mysqli_connect('localhost', 'root', '', 'test2');
 
 // Check if the connection is successful
 if(!$db) {
     echo 'Database connection failed';
 } else {
     // Retrieve image URLs from the database
-    $sql = "SELECT url FROM img";
+    $sql = "SELECT url FROM img2";
     $result = mysqli_query($db, $sql);
 
     if($result) {
